@@ -1,0 +1,14 @@
+model UserSchema{
+    id String @id @default(uuid())
+    username String @unique
+    password String
+    profile String
+    email String
+    isVerified Boolean @default(false)
+    verificationCode String @default("")
+    isResetPasswordInitiated Boolean @default(false)
+    resetPasswordOTP String @default("")
+    resetPasswordExpiration DateTime
+    likedSongs LikedSongsSchema[]
+    songHistory SongHistorySchema[]
+}

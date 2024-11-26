@@ -1,0 +1,9 @@
+model SongHistorySchema {
+    id String @id @default(uuid())
+    songId String 
+    songName String
+    banner String
+    timestamp DateTime
+    user UserSchema @relation(fields: [userId], references: [id])
+    userId String 
+}
