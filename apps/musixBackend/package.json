@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
-    "dev": "tsc -b && node dist/index.js" 
+    "dev": "tsc -b && node --env-file=../../.env dist/index.js" 
+  },
+  "dependencies": {
+    "@repo/ui": "*"
   },
   "keywords": [],
   "author": "",
