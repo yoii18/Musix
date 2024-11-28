@@ -3,7 +3,7 @@ model UserSchema{
     username String @unique
     password String
     profile String
-    email String
+    email String @unique
     isVerified Boolean @default(false)
     verificationCode String @default("")
     isResetPasswordInitiated Boolean @default(false)

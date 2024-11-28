@@ -1,4 +1,3 @@
-const emailTemplate = `
 <!DOCTYPE HTML
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
@@ -99,7 +98,7 @@ const emailTemplate = `
     }
 
     #u_body a {
-      color: #f1c40f;
+      color: #fff;
       text-decoration: underline;
     }
 
@@ -194,7 +193,7 @@ const emailTemplate = `
                                   <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
 
                 
-                                  <img align="center" border="0" src="https://cdn.discordapp.com/attachments/1079039236302446705/1133398219804643338/logo-512.png" alt="image" title="image" width="120px" style="border-radius:14px"/>
+                                  <img align="center" border="0" src="./images/musix.png" alt="image" title="image" width="120px" style="border-radius:14px"/>
 
                                   </td>
                                 </tr>
@@ -220,12 +219,12 @@ const emailTemplate = `
                                       \${email}</strong></span></p>
                                 <p style="line-height: 140%; font-size: 14px;"> </p>
                                 <p style="line-height: 140%; font-size: 14px;"> </p>
-                                <p style="line-height: 140%; font-size: 14px;">We are thrilled to welcome you to Muxik, the ultimate platform for audiophiles like you to enjoy music without any paywall hindrance. Your journey into a world of seamless music exploration starts now!</p>
-                                <p>To complete your sign-up process, please use the One-Time Password (OTP) provided below. This unique code ensures the security of your account and confirms your genuine interest in joining our community of passionate music lovers</p>
+                                <p style="line-height: 140%; font-size: 14px;">We received a request to reset your password for your account at Musix. If you didn't initiate this request, you can safely ignore this email.</p>
+                                <p>To proceed with the password reset, please use the following One-Time Password (OTP) within the next 15 minutes:</p>
                                 <p style="line-height: 140%; font-size: 14px;"> </p>
                                 <p style="line-height: 140%; font-size: 14px;"><span
                                   style="font-size: 14px; line-height: 19.6px;"><strong><span
-                                      style="font-family: Raleway, sans-serif; font-size: 25px; line-height: 19.6px;">Your Otp :  \${otp} </span></strong></span></p>
+                                      style="font-family: Raleway, sans-serif; font-size: 25px; line-height: 19.6px;">Otp :\${otp} </span></strong></span></p>
                                       <p style="line-height: 140%; font-size: 14px;"> </p>
                                       <p style="line-height: 140%; font-size: 14px;"> </p>
                                 <p style="line-height: 140%; font-size: 14px;"><span
@@ -238,7 +237,7 @@ const emailTemplate = `
                                   style="font-family: Raleway, sans-serif; font-size: 14px; ">Regards</span></strong>
                             </p>
                                 <p style="line-height: 140%; font-size: 14px;"><strong><span
-                                      style="font-family: Raleway, sans-serif; font-size: 14px; line-height: 19.6px;">Team Muxik.</span></strong>
+                                      style="font-family: Raleway, sans-serif; font-size: 14px; line-height: 19.6px;">Team Musix.</span></strong>
                                 </p>
                                 <p style="line-height: 140%; font-size: 14px;"> </p>
                               </div>
@@ -297,8 +296,8 @@ const emailTemplate = `
                               <div class="v-text-align"
                                 style="font-size: 14px; color: #ffffff; line-height: 160%; text-align: center; word-wrap: break-word;">
                                 <p style="font-size: 14px; line-height: 160%;">if you have any questions, please email
-                                  us at <a rel="noopener" href="mailto:muxikservices@gmail.com"
-                                    target="_blank">muxikservices@gmail.com</a></p>
+                                  us at <a rel="noopener" href="mailto:musixservices@gmail.com"
+                                    target="_blank">musixservices@gmail.com</a></p>
                               </div>
 
                             </td>
@@ -356,6 +355,3 @@ const emailTemplate = `
 </body>
 
 </html>
-`;
-
-export default emailTemplate;
