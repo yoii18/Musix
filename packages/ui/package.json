@@ -6,7 +6,9 @@
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./emailTemplates/emailTemplate": "./emailTemplates/emailTemplate.ts",
+    "./emailTemplates/passTemplate": "./emailTemplates/passTemplate.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",

@@ -4,11 +4,11 @@ model UserSchema{
     password String
     profile String
     email String @unique
-    isVerified Boolean @default(false)
-    verificationCode String @default("")
-    isResetPasswordInitiated Boolean @default(false)
-    resetPasswordOTP String @default("")
-    resetPasswordExpiration DateTime
+    isVerified Boolean? @default(false)
+    verificationCode String? @default("")
+    isResetPasswordInitiated Boolean? @default(false)
+    resetPasswordOTP String? @default("")
+    resetPasswordExpiration DateTime?
     likedSongs LikedSongsSchema[]
     songHistory SongHistorySchema[]
 }

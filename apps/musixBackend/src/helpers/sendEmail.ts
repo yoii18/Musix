@@ -1,7 +1,6 @@
-import {emailTemplate} from "@repo/ui/emailTeamplates/emailTemplate"
-import {passTemplate} from "@repo/ui/emailTeamplates/passTemplate"
 import Transporter from "../config/emailServer.js";
-import { string } from "zod";
+import { emailTemplate } from "../emailTeamplates/emailTemplate.js";
+import { passTemplate } from "../emailTeamplates/passTemplate.js";
 
 interface EmailInputs {
     email: string,
